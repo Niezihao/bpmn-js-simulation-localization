@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/bpmn-io/bpmn-js-token-simulation/workflows/CI/badge.svg)](https://github.com/bpmn-io/bpmn-js-token-simulation/actions?query=workflow%3ACI)
 
-一个npnm 模拟流转流程的模拟器,基于bnpm使用,只是简单的汉化（0.27.0版）
+一个bpnm 模拟流转流程的模拟器,基于bnpm使用,只是简单的汉化（0.27.0版）
 
 [![Screencast](docs/screenshot.png)](https://bpmn-io.github.io/bpmn-js-token-simulation/modeler.html?e=1&pp=1)
 
@@ -78,7 +78,6 @@ npm run start:example
 * [Making of token simulation](https://nikku.github.io/talks/2021-token-simulation/presentation.html) - The case for token simulation and how it builds on top of [bpmn-js](https://github.com/bpmn-io/bpmn-js)
 * [Token simulation internals](https://nikku.github.io/talks/2021-token-simulation-internals/presentation.html) - Detailed walk through the simulators core
 * [Camunda Modeler Token Simulation plug-in](https://github.com/bpmn-io/bpmn-js-token-simulation-plugin) - Token simulation for [Camunda](https://camunda.com/) users
-
 
 ## Supported Elements
 
