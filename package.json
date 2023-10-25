@@ -1,0 +1,87 @@
+{
+  "name": "bpmn-js-simulation-localization",
+  "version": "0.27.0",
+  "description": "bpmn-js token simulation extension",
+  "main": "index.js",
+  "scripts": {
+    "all": "run-s bundle:src lint test bundle",
+    "bundle:src": "rollup -c",
+    "bundle": "webpack --mode production",
+    "bundle:watch": "webpack -w",
+    "start": "cross-env SINGLE_START=modeler npm run dev",
+    "start:example": "webpack serve --static ./example --open",
+    "lint": "eslint .",
+    "test": "karma start",
+    "dev": "npm test -- --auto-watch --no-single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/bpmn-js-token-simulation.git"
+  },
+  "contributors": [
+    {
+      "name": "Patrick Dehn",
+      "url": "https://github.com/pedesen"
+    },
+    {
+      "name": "Philipp Fromme",
+      "url": "https://github.com/philippfromme"
+    },
+    {
+      "name": "Sebastian Warnke",
+      "url": "https://github.com/sebwarnke"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bpmn-io/bpmn-js-token-simulation/issues"
+  },
+  "homepage": "https://github.com/bpmn-io/bpmn-js-token-simulation#readme",
+  "files": [
+    "assets",
+    "lib",
+    "index.js"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "devDependencies": {
+    "@bpmn-io/add-exporter": "^0.2.0",
+    "@bpmn-io/properties-panel": "^0.10.2",
+    "bpmn-js": "^9.0.2",
+    "bpmn-js-properties-panel": "^1.0.0-alpha.2",
+    "chai": "^4.3.6",
+    "copy-webpack-plugin": "^10.2.2",
+    "cross-env": "^7.0.3",
+    "downloadjs": "^1.4.7",
+    "eslint": "^7.32.0",
+    "eslint-plugin-bpmn-io": "^0.13.0",
+    "file-drops": "^0.4.0",
+    "file-open": "^0.1.1",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "karma": "^6.3.12",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.1.0",
+    "karma-debug-launcher": "0.0.4",
+    "karma-env-preprocessor": "^0.1.1",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^9.2.0",
+    "mocha-test-container-support": "^0.2.0",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^13.1.2",
+    "rollup": "^2.66.1",
+    "rollup-plugin-string": "^3.0.0",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.7.0",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "min-dash": "^3.8.1",
+    "min-dom": "^3.1.3",
+    "randomcolor": "^0.6.2"
+  }
+}
