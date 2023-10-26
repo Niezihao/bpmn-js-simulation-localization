@@ -1,6 +1,6 @@
 {
   "name": "bpmn-js-simulation-localization",
-  "version": "0.27.0",
+  "version": "1.0.1",
   "description": "bpmn-js token simulation extension",
   "main": "index.js",
   "scripts": {
